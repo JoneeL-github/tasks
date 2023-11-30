@@ -19,3 +19,5 @@
 const map1 = new Map();
 
 console.clear();
+console.clear();
+console.clear();
