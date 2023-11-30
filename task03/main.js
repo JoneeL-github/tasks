@@ -14,10 +14,26 @@
 // OUTPUT:    Search result:  Cow, Founded
 //                     Search result:  Co,  Not found
 
-// b) Copy Array to new Array  ( use Map )
 
-const map1 = new Map();
 
-console.clear();
-console.clear();
-console.clear();
+const animalArray = [{animal: 'Dog'}, {animal: 'Horse'}, {animal: 'Cow'}];
+
+let animal = animalArray.map(function(item) {
+    return item.animal;
+});
+
+// console.log(animal);
+
+
+let animalArr2 = ['Dog', 'Horse', 'Cow'];
+
+animalArr2.map(function(animalItem, index, allanimals) {
+    if(allanimals.length <= 2) {
+        console.log(`wow thats alot of animals`);
+    } else {
+        console.log(`i dont quite follow this <= ${index} + ${animalItem} + ${allanimals}`);
+    }
+    
+    return `${index}_${animalItem}`;
+});
+
