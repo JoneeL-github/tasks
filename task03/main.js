@@ -14,26 +14,39 @@
 // OUTPUT:    Search result:  Cow, Founded
 //                     Search result:  Co,  Not found
 
+// const originArray = ['Dog', 'Horse', 'Cow'];
 
+// Array of objects
 
-const animalArray = [{animal: 'Dog'}, {animal: 'Horse'}, {animal: 'Cow'}];
+const animalsArray = ['Dog', 'Horse', 'Cow'];
 
-let animal = animalArray.map(function(item) {
-    return item.animal;
+const newArray = animalsArray.map(function (animal) {
+  return animal;
 });
+console.log(newArray);
 
-// console.log(animal);
+newArray.push('Cat', 'Sheep');
+console.log(newArray);
+//searching the array for positions
+for (let i = 0; i < newArray.length; i++) {
+  console.log(newArray[i] + ' ' + i);
+}
 
+if (newArray[2] === 'Cow') {
+  console.log('yes');
+} else {
+  console.log('no');
+}
 
-let animalArr2 = ['Dog', 'Horse', 'Cow'];
+let cow = newArray[2];
+if (cow === 'Cow') {
+  console.log('result cow Founded ' + cow);
+} else {
+  console.log('error');
+}
 
-animalArr2.map(function(animalItem, index, allanimals) {
-    if(allanimals.length <= 2) {
-        console.log(`wow thats alot of animals`);
-    } else {
-        console.log(`i dont quite follow this <= ${index} + ${animalItem} + ${allanimals}`);
-    }
-    
-    return `${index}_${animalItem}`;
-});
-
+if (cow === 'Co') {
+  console.log('yes' + cow);
+} else {
+  console.log('Co, not Found');
+}
