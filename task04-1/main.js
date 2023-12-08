@@ -33,6 +33,7 @@ if (myFlower) {
   myFlower = new Flower('Rose', 'Yellow', 4, 'No');
   console.log('after changes: ', myFlower);
 }
+//added a further if statement to check if its working
 if(myFlower.amount < 5) {
   myFlower = new Flower('Rose', 'Red', 2, false);
   console.log('further changes...  ', myFlower);
