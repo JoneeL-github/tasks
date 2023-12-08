@@ -25,18 +25,13 @@ class Flower {
     console.log(`${this.type}, ${this.color} ${this.amount}, ${this.instore}`);
   }
 }
-let myFlower = new Flower('Rose', 'Red', 2, 'Yes');
-myFlower.getFlower();
-console.log('Original situation ', myFlower);
+let myFlower = new Flower('Rose', 'Red', 5, 'yes', true);
+ console.log('Original situation ', myFlower);
 
-if (myFlower) {
-  myFlower = new Flower('Rose', 'Yellow', 4, 'No');
-  console.log('after changes: ', myFlower);
+if(myFlower.instore === false) {
+  console.log('yes');
+}else{
+   myFlower = new Flower('Rose', 'Yellow', 4, 'no', false);
+  console.log('after changes.. ', myFlower);
 }
-//added a further if statement to check if its working
-if(myFlower.amount < 5) {
-  myFlower = new Flower('Rose', 'Red', 2, false);
-  console.log('further changes...  ', myFlower);
-} else {
-  console.log('error');
-}
+
