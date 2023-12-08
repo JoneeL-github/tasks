@@ -25,13 +25,12 @@ class Flower {
     console.log(`${this.type}, ${this.color} ${this.amount}, ${this.instore}`);
   }
 }
-let myFlower = new Flower('Rose', 'Red', 5, 'yes', true);
- console.log('Original situation ', myFlower);
+let myFlower = new Flower('Rose', 'Red', 5, 'yes');
+console.log('Original situation ', myFlower);
 
-if(myFlower.instore === false) {
+if (myFlower.instore === false) {
   console.log('yes');
-}else{
-   myFlower = new Flower('Rose', 'Yellow', 4, 'no', false);
+} else {
+  myFlower = new Flower('Rose', 'Yellow', 4, 'no');
   console.log('after changes.. ', myFlower);
 }
-
