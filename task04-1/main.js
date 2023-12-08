@@ -26,6 +26,7 @@ class Flower {
   }
 }
 let myFlower = new Flower('Rose', 'Red', 5, 'yes');
+myFlower.getFlower()
 console.log('Original situation ', myFlower);
 
 if (myFlower.instore === false) {
