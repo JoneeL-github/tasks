@@ -28,13 +28,9 @@ console.log(newArray);
 const indexOfCow = newArray.indexOf('Cow');
 console.log(indexOfCow);
 
-//is cow realy at index 2?
 let animal = newArray[2];
-if (animal === 'Cow') {
-  console.log('Cow Found ');
-} else {
-  console.log('no');
-}
-
-let find = newArray.find((animal) => animal === 'Co');
-console.log('Search result: Co, Not Found ' + find);
+// console.log(animal);
+let co = 'Co';
+// animal co
+console.log(animal === 'Cow' ? `${animal} was found` : `${animal} was NOT found`);
+console.log(newArray.includes(co) ? `Yes ${co} was found` : ` ${co} was NOT found`);
