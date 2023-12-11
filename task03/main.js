@@ -15,8 +15,7 @@
 //                     Search result:  Co,  Not found
 
 const animalsArray = ['Dog', 'Horse', 'Cow'];
-
-const newArray = animalsArray.map(function (animal) {
+let newArray = animalsArray.map(function (animal) {
   return animal;
 });
 console.log(newArray);
@@ -25,12 +24,15 @@ newArray.push('Cat', 'Sheep');
 console.log(newArray);
 
 //where is cow??
-const indexOfCow = newArray.indexOf('Cow');
+let indexOfCow = newArray.indexOf('Cow');
 console.log(indexOfCow);
 
 let animal = newArray[2];
 // console.log(animal);
 let co = 'Co';
-// animal co
-console.log(animal === 'Cow' ? `${animal} was found` : `${animal} was NOT found`);
-console.log(newArray.includes(co) ? `Yes ${co} was found` : ` ${co} was NOT found`);
+console.log(
+  animal === 'Cow' ? `${animal} was found` : `${animal} was NOT found`
+);
+console.log(
+  newArray.includes(co) ? `Yes ${co} was found` : ` ${co} was NOT found`
+);
