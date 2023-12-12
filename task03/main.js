@@ -14,6 +14,7 @@
 // OUTPUT:    Search result:  Cow, Founded
 //                     Search result:  Co,  Not found
 
+//---------------------------------------------------------//
 const animalsArray = ['Dog', 'Horse', 'Cow'];
 let newArray = animalsArray.map(function (animal) {
   return animal;
@@ -35,17 +36,5 @@ console.log(
 console.log(
   newArray.includes(co) ? `Yes ${co} was found` : ` ${co} was NOT found`
 );
+//---------------------------------------------------------//
 
-
-let isSnowing = false;
-let wheather;
-
-if(isSnowing == true) {
-  wheather = 'YES it is snowing'
-} else {
-  wheather = 'NO it is not currently snowing'
-}
-console.log(wheather);
-
-let ternary = isSnowing ? 'Yes it is Snowing' : 'No it is not currently Snowing';
-console.log(ternary);
