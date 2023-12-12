@@ -20,18 +20,11 @@ class Flower {
     this.amount = amount;
     this.instore = instore;
   }
-
-  getFlower() {
-    console.log(`${this.type}, ${this.color} ${this.amount}, ${this.instore}`);
+  getFlower () {
+    return `${this.type}`
   }
 }
-let myFlower = new Flower('Rose', 'Red', 5, 'yes');
-myFlower.getFlower()
-console.log('Original situation ', myFlower);
-
-if (myFlower.instore === false) {
-  console.log('yes');
-} else {
-  myFlower = new Flower('Rose', 'Yellow', 4, 'no');
-  console.log('after changes.. ', myFlower);
-}
+const flower = new Flower('rose');
+flower.getFlower();
+// myFlower = new Flower('Rose', 'Yellow', 4, 'no');
+//   console.log('after changes.. ', myFlower);
