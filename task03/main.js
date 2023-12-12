@@ -36,7 +36,7 @@ console.log(
   newArray.includes(co) ? `Yes ${co} was found` : ` ${co} was NOT found`
 );
 
-
+//ternary vs if else study below
 let isSnowing = false;
 let wheather;
 
