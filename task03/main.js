@@ -25,10 +25,9 @@ console.log(newArray);
 
 //where is cow??
 let indexOfCow = newArray.indexOf('Cow');
-console.log(indexOfCow);
+console.log(indexOfCow); //cow is index 2
 
 let animal = newArray[2];
-// console.log(animal);
 let co = 'Co';
 console.log(
   animal === 'Cow' ? `${animal} was found` : `${animal} was NOT found`
@@ -36,3 +35,17 @@ console.log(
 console.log(
   newArray.includes(co) ? `Yes ${co} was found` : ` ${co} was NOT found`
 );
+
+
+let isSnowing = false;
+let wheather;
+
+if(isSnowing == true) {
+  wheather = 'YES it is snowing'
+} else {
+  wheather = 'NO it is not currently snowing'
+}
+console.log(wheather);
+
+let ternary = isSnowing ? 'Yes it is Snowing' : 'No it is not currently Snowing';
+console.log(ternary);
