@@ -13,18 +13,45 @@
 // Flower { Type: Rose , Color: Yellow , Amount: 4 , inStore: No }
 
 //what are class properties??
+//constructors re usable method of objects
+
 class Flower {
-  constructor(type, color, amount, instore) {
-    this.type = type;
-    this.color = color;
-    this.amount = amount;
-    this.instore = instore;
+  constructor(type, color, amount, inStore) {
+    (this.type = type),
+      (this.color = color),
+      (this.amount = amount),
+      (this.inStore = inStore);
   }
-  getFlower () {
-    return `${this.type}`
+  getFlower() {
+    return ` properties: getFlower method ${this.type}`;
   }
 }
-const flower = new Flower('rose');
-flower.getFlower();
-// myFlower = new Flower('Rose', 'Yellow', 4, 'no');
-//   console.log('after changes.. ', myFlower);
+const flower1 = new Flower('Rose', 'Red', 5, 'yes');
+const flower2 = new Flower('Rose', 'Yellow', 4, 'no');
+
+// Log specific properties of each flower
+console.log(flower1.type, flower1.amount);
+console.log(flower2.type, flower2.amount);
+
+// console.log(flower1);
+// Log specific properties of each flower using the getFlower method
+console.log(flower1.getFlower());
+console.log(flower2.getFlower());
+
+if (flower1.inStore === 'yes') {
+  console.log('Original situation.. ');
+  console.log(flower1);
+  console.log('yes');
+} else {
+  console.log('error');
+}
+
+if (flower2.amount == 4) {
+  console.log('After changes.. ');
+  console.log(flower2);
+  console.log('no');
+} else {
+  console.log('error');
+}
+
+//a constructor function is nothing but a function that creates objects ??
