@@ -51,6 +51,7 @@ if (flower1.amount < 5 || flower1.amount > 5) {
 } else {
   console.log('..');
 }
+//this one is not working yet...
 if (flower1.inStore === false) {
   console.log('after changes..');
   console.log(result);
