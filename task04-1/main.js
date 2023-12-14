@@ -24,7 +24,7 @@ class Flower {
   }
 }
 //change flower1 to see somthing.
-const flower1 = new Flower('Rose', 'Red', 5, 'yes');
+const flower1 = new Flower('Rose', 'Yellow', 5, 'yes');
 const flower2 = new Flower('Rose', 'Yellow', 4, 'no');
 const result = new Flower(
   flower2.type,
@@ -42,14 +42,14 @@ if (flower1.type !== 'Rose' || flower1.color !== 'Red') {
   console.log('after changes..');
   console.log(result);
 } else {
-  console.log('..');
+  console.log('..'); //this updates when conditions Not met
 }
 //condition on the amount class property
 if (flower1.amount < 5 || flower1.amount > 5) {
   console.log('after changes..');
   console.log(result);
 } else {
-  console.log('..');
+  console.log('..'); //this updates when conditions Not met
 }
 //this one is not working yet...
 if (flower1.inStore === false) {
