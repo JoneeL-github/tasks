@@ -22,36 +22,38 @@ class Flower {
       (this.amount = amount),
       (this.inStore = inStore);
   }
-  getFlower() {
-    return ` properties: getFlower method ${this.type}`;
-  }
 }
+//change flower1 to see somthing.
 const flower1 = new Flower('Rose', 'Red', 5, 'yes');
 const flower2 = new Flower('Rose', 'Yellow', 4, 'no');
+const result = new Flower(
+  flower2.type,
+  flower2.color,
+  flower2.amount,
+  flower2.inStore
+);
 
-// Log specific properties of each flower
-console.log(flower1.type, flower1.amount);
-console.log(flower2.type, flower2.amount);
-
-// console.log(flower1);
-// Log specific properties of each flower using the getFlower method
-console.log(flower1.getFlower());
-console.log(flower2.getFlower());
-
-if (flower1.inStore === 'yes') {
-  console.log('Original situation.. ');
+if (flower1 === flower1) {
+  console.log('Original situation..');
   console.log(flower1);
-  console.log('yes');
+}
+//condition on the type and color properties
+if (flower1.type !== 'Rose' || flower1.color !== 'Red') {
+  console.log('after changes..');
+  console.log(result);
+} else {
+  console.log('..');
+}
+//condition on the amount class property
+if (flower1.amount < 5 || flower1.amount > 5) {
+  console.log('after changes..');
+  console.log(result);
+} else {
+  console.log('..');
+}
+if (flower1.inStore === false) {
+  console.log('after changes..');
+  console.log(result);
 } else {
   console.log('error');
 }
-
-if (flower2.amount == 4) {
-  console.log('After changes.. ');
-  console.log(flower2);
-  console.log('no');
-} else {
-  console.log('error');
-}
-
-//a constructor function is nothing but a function that creates objects ??
