@@ -17,19 +17,22 @@
 
 class Flower {
   constructor(type, color, amount, inStore) {
-    (this.type = type),
-      (this.color = color),
-      (this.amount = amount),
-      (this.inStore = inStore);
+    this.type = type;
+    this.color = color;
+    this.amount = amount;
+    this.inStore = inStore;
   }
 }
+
 const flower1 = new Flower('Rose', 'Red', 5, true);
 
-console.log(flower1.type); //this in constructor refers to flower obj?
+// Output the properties of flower1
+console.log(flower1.type);
 console.log(flower1.color);
 console.log(flower1.amount);
 console.log(flower1.inStore);
 
+// Check if flower1 exists
 if (flower1) {
   console.log('Original situation..');
   flower1.inStore = 'yes';
@@ -37,13 +40,4 @@ if (flower1) {
 } else {
   console.log('no');
 }
-
-if (flower1.type) {
-  console.log(flower1.type);
-  console.log('after changes..');
-  flower1.type = 'Tulip';
-  flower1.inStore = 'no';
-  console.log(flower1);
-} else {
-  console.log('error');
-}
+//  class function to display multiple times?
