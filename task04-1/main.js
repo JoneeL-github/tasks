@@ -23,41 +23,27 @@ class Flower {
       (this.inStore = inStore);
   }
 }
-//change flower1 to see somthing.
-const flower1 = new Flower('Rose', 'Red', 5, 'yes');
-const flower2 = new Flower('Rose', 'Yellow', 4, 'no');
-const result = new Flower(
-  flower2.type,
-  flower2.color,
-  flower2.amount,
-  flower2.inStore
-);
+const flower1 = new Flower('Rose', 'Red', 5, true);
+
+console.log(flower1.type); //this in constructor refers to flower obj?
+console.log(flower1.color);
+console.log(flower1.amount);
+console.log(flower1.inStore);
 
 if (flower1) {
   console.log('Original situation..');
+  flower1.inStore = 'yes';
   console.log(flower1);
+} else {
+  console.log('no');
 }
 
-//condition on the type and color properties
-if (flower1.type !== 'Rose' || flower1.color !== 'Red') {
+if (flower1.type) {
+  console.log(flower1.type);
   console.log('after changes..');
-  console.log(result);
+  flower1.type = 'Tulip';
+  flower1.inStore = 'no';
+  console.log(flower1);
 } else {
-  console.log('..');
+  console.log('error');
 }
-//condition on the amount class property
-if (flower1.amount < 5 || flower1.amount > 5) {
-  console.log('after changes..');
-  console.log(result);
-} else {
-  console.log('..');
-}
-//condition boolean true false
-if (flower1.inStore === 'no') {
-  console.log('after changes..');
-  console.log(result);
-} else {
-  console.log('yea its working');
-}
-
-// conditon ? '' : ''; //ternary operator but un-readable
