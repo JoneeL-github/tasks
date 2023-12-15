@@ -33,7 +33,7 @@ const result = new Flower(
   flower2.inStore
 );
 
-if (flower1 === flower1) {
+if (flower1) {
   console.log('Original situation..');
   console.log(flower1);
 }
@@ -43,14 +43,14 @@ if (flower1.type !== 'Rose' || flower1.color !== 'Red') {
   console.log('after changes..');
   console.log(result);
 } else {
-  console.log('..'); //this updates when conditions Not met
+  console.log('..');
 }
 //condition on the amount class property
 if (flower1.amount < 5 || flower1.amount > 5) {
   console.log('after changes..');
   console.log(result);
 } else {
-  console.log('..'); //this updates when conditions Not met
+  console.log('..');
 }
 //condition boolean true false
 if (flower1.inStore === 'no') {
