@@ -9,4 +9,4 @@
 let maincontent = document.querySelector(".maincontent");
 console.log(maincontent);
 
-let html = (maincontent.innerHTML = "Ad astra per aspera");
+let html = (maincontent.innerHTML += "<h1>Ad astra per aspera</h1>");
