@@ -12,32 +12,46 @@
 //       After changes:
 // Flower { Type: Rose , Color: Yellow , Amount: 4 , inStore: No }
 
-//what are class properties??
-//constructors re usable method of objects
+//assigning the constructor property to an object...??????
+// what
 
+//step 1 created a class Flower with a
+// type property asking what type of flower
 class Flower {
-  constructor(type, color, amount, inStore) {
-    this.type = type;
-    this.color = color;
-    this.amount = amount;
-    this.inStore = inStore;
+  constructor(type, color, amount, instore) {
+    (this.type = type), //what is the type of flower?
+      (this.color = color),
+      (this.amount = amount),
+      (this.instore = instore);
   }
 }
+const oldFlower = new Flower("Rose", "Red", 5, true);
+const newFlower = new Flower(
+  oldFlower.type,
+  oldFlower.color, //oldflower become newflower
+  oldFlower.amount,
+  oldFlower.instore
+);
+// console.log(oldFlower);
 
-const flower1 = new Flower('Rose', 'Red', 5, true);
-
-// Output the properties of flower1
-console.log(flower1.type);
-console.log(flower1.color);
-console.log(flower1.amount);
-console.log(flower1.inStore);
-
-// Check if flower1 exists
-if (flower1) {
-  console.log('Original situation..');
-  flower1.inStore = 'yes';
-  console.log(flower1);
-} else {
-  console.log('no');
+//this is oldflower
+if (oldFlower) {
+  console.log("Original situation..");
+  oldFlower.instore = "yes";
+  console.log(oldFlower);
 }
-//  class function to display multiple times?
+
+//changing the flower
+newFlower.type = "Rose";
+newFlower.color = "Yellow";
+newFlower.amount = 4;
+newFlower.instore = false;
+
+//is still oldflower?
+if (!newFlower.instore) {
+  newFlower.instore = "no";
+  console.log("yes data has been changed..");
+  console.log(newFlower);
+} else {
+  console.log(oldFlower);
+}
