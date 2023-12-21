@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2Flowers</title>
+    <link rel="stylesheet" href="testi.css" />
+  </head>
+  <!-- parent -->
+  <body>
+    <!-- childnode -->
+    <header><h1>Roses</h1></header>
+    <!-- childnode -->
+    <select onchange="swapImages()">
+      <option value="1" selected>Pink</option>
+      <option value="2">Red</option>
+      <option value="3">yellow</option>
+    </select>
+    <div class="picture dropDown">
+      <p><img id="imageToSwap" src="yellow.jpg" /></p>
+    </div>
+    <!-- hello list under flower picture -->
+    <ul class="dropDown" id="noticeList">
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+    </ul>
+    <script>
+      let option = document.getElementsByTagName("option");
+      console.log(option.value);
+
+      function swapImages() {}
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
