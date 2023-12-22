@@ -27,3 +27,8 @@ header {
 .menus{
     margin-bottom: 40px; /* just for space with flower and picture */ 
 }
+
+#ImageList {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

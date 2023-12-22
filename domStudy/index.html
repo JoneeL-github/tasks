@@ -6,14 +6,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header><h1>Dom Study on image Swapping</h1></header>
-
-        dropDown menu
-
+    <header><h1>Roses</h1></header>
+    <!--  -->
+   <!-- picture is used to style width height of image -->
     <div class="picture dropDown">
-      dropDown
-      <img src="pink.jpg" alt="swappMe" />
+      <select id="ImageList">
+        <option value="yellow.jpg">Yellow</option>
+        <option value="red.jpg">Red</option>
+        <option value="pink.jpg">Pink</option>
+    </select>
+      <p>
+        <img id="imgSwitcher" src="yellow.jpg" />
+      </p>
     </div>
+    <!--  -->
     <script src="main.js"></script>
   </body>
 </html>
+<!-- "editor.background": "#0f0f16", -->

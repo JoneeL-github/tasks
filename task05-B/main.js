@@ -1,11 +1,26 @@
-// The purpose of the task is to create a web page where 3 images are presented using a dropdown list.
-// Component and functionalities are made by JavaScript.
-
-// Download the zip file, extract it and use ready-made partitions there.
-// You find css , html, and 3 images files. Use this in task.
-
-// Use dropdown-list to choose color and then it will change picture. More instructions in PDF-file.
-// Do your Task to GitHub and share it with your teacher.
-let body = document.body;
-console.log(body);
-
+function setImage() {
+    //this is getting the img tag to display selected image
+    var switchMyImage = document.getElementById("imgSwitcher");
+    //using the img tag from demo then selecting src attribute
+    //and sets property value to this.value
+    //this.value which refers to yellow.jpg
+    switchMyImage.src = this.value;
+    return false;
+  }
+  //selection tag id imageList
+  document.getElementById("ImageList").onchange = setImage;
+  
+  //   used this reference to achive this
+  /* <img id="image" src="Null_Image.png"/>
+  <select id="CarList">
+      <option value="Null">No Car</option>
+      <option value="Volvo">Volvo</option>
+      <option value="Audi">Audi</option>
+  </select> */
+  // var changeCarImage = function () {
+  //     document.getElementById('image').src = this.options[this.selectedIndex].value + "_Image.png"
+  // }
+  
+  // var carList = document.getElementById('CarList');
+  // carList.addEventListener('change', changeCarImage, false); // Note this has some issues in old browsers (IE).
+  
