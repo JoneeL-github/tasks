@@ -28,9 +28,9 @@ header {
 
 #ImageList {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 4rem;
 }
 #imageArea {
   width: 150px;
-  height: 200px;
+  height: 210px;
 }
