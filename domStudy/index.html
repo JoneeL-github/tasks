@@ -8,18 +8,18 @@
   <body>
     <header><h1>Roses</h1></header>
     <!--  -->
-   <!-- picture is used to style width height of image -->
-    <div class="picture dropDown">
-    <form>
-      <label>Choose color:</label>
-      <select id="ImageList">
-        <option value="yellow.jpg">Yellow</option>
-        <option value="red.jpg">Red</option>
-        <option value="pink.jpg">Pink</option>
-    </select>
-    </form>
+    <!-- picture is used to style width height of image -->
+    <div class="dropDown">
+      <form>
+        <label>Choose color:</label>
+        <select id="ImageList" onchange="displaySelected()">
+          <option value="yellow.jpg">Yellow</option>
+          <option value="red.jpg">Red</option>
+          <option value="pink.jpg">Pink</option>
+        </select>
+      </form>
       <p>
-        <img id="displayImage" src="yellow.jpg" />
+        <img id="imageArea" src="yellow.jpg" alt="Selected ColorImage" />
       </p>
     </div>
     <!--  -->

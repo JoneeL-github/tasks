@@ -1,34 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;    
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    background: #f4f4f4;
-    padding: 1rem;
-    text-align: center;
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
 }
 .dropDown {
-    text-align: center;
-    margin: auto;
-    width: 500px;
-    overflow: auto;
-    padding: 1rem 1rem;
-    list-style: none; /* Just for myList */
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  overflow: auto;
+  padding: 1rem 1rem;
+  list-style: none; /* Just for myList */
 }
-.picture img{
-    width: 150px;
-}
-.menus{
-    margin-bottom: 40px; /* just for space with flower and picture */ 
+
+.menus {
+  margin-bottom: 40px; /* just for space with flower and picture */
 }
 
 #ImageList {
-    margin: 0 auto;
-    margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#imageArea {
+  width: 150px;
+  height: 200px;
 }
