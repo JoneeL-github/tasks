@@ -14,7 +14,6 @@ function text() {
   var displayText = document.getElementById("displayText");
   var text = 'No need to click picture \n';
   displayText.innerText += text;
-  //Todo display text vertically as you click
 }
 
 function displayText() {

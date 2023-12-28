@@ -1,26 +1,38 @@
-function setImage() {
-    //this is getting the img tag to display selected image
-    var switchMyImage = document.getElementById("imgSwitcher");
-    //using the img tag from demo then selecting src attribute
-    //and sets property value to this.value
-    //this.value which refers to yellow.jpg
-    switchMyImage.src = this.value;
-    return false;
+// l
+
+var ImageList = document.getElementById("ImageList");
+var imageArea = document.getElementById("imageArea");
+var displayText = document.getElementById("displayText");
+function displaySelected() {
+  // Set the content of the image area to the selected value from the dropdown
+  imageArea.src = ImageList.value;
+}
+
+console.log(ImageList);
+
+function text() {
+  var displayText = document.getElementById("displayText");
+  var text = 'No need to click picture \n';
+  displayText.innerText += text;
+}
+
+function displayText() {
+  if (ImageList.value === "yellow.jpg") {
+    console.log("yes");
+    displayText.innerText = "yes";
+  } else {
+    console.log("no");
+    displayText.style = "block";
+    displayText.innerText = "no";
   }
-  //selection tag id imageList
-  document.getElementById("ImageList").onchange = setImage;
-  
-  //   used this reference to achive this
-  /* <img id="image" src="Null_Image.png"/>
-  <select id="CarList">
-      <option value="Null">No Car</option>
-      <option value="Volvo">Volvo</option>
-      <option value="Audi">Audi</option>
-  </select> */
-  // var changeCarImage = function () {
-  //     document.getElementById('image').src = this.options[this.selectedIndex].value + "_Image.png"
-  // }
-  
-  // var carList = document.getElementById('CarList');
-  // carList.addEventListener('change', changeCarImage, false); // Note this has some issues in old browsers (IE).
-  
+}
+
+var imageArea = document.getElementById("imageArea");
+imageArea.addEventListener("mouseover", function () {
+  displayText.style.marginTop = "50px";
+  displayText.style.display = "block";
+});
+imageArea.addEventListener("mouseleave", function () {
+  displayText.style.display = "none";
+  displayText.innerText = "";
+});
