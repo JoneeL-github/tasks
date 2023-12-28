@@ -8,12 +8,13 @@ function displaySelected() {
   imageArea.src = ImageList.value;
 }
 
-// Reference Vs Value In JavaScript ?? look this up next time
 console.log(ImageList);
 
 function text() {
   var displayText = document.getElementById("displayText");
-  displayText.innerText += `you clicked + <br></br>`;
+  var text = 'No need to click picture \n';
+  displayText.innerText += text;
+  //Todo display text vertically as you click
 }
 
 function displayText() {
@@ -29,7 +30,7 @@ function displayText() {
 
 var imageArea = document.getElementById("imageArea");
 imageArea.addEventListener("mouseover", function () {
-  displayText.style.marginTop = "50px"
+  displayText.style.marginTop = "50px";
   displayText.style.display = "block";
 });
 imageArea.addEventListener("mouseleave", function () {
